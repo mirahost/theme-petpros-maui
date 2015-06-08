@@ -5,27 +5,27 @@
    ========================================================================== */
 
 
-body{ margin:0; padding:0; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size:12px; color:#333; background:url(images/bg.jpg) #fff; }
+body{ margin:0; padding:0; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size:12px; color:#333; background:url(../img/bg.jpg) #fff; }
 .container{ width:90%; max-width:1240px; margin:0 auto; }
 a:hover{ text-decoration:none; } .f-left{ float:left; } .f-right{ float:right; } .clear{ clear:both; }
 
-.wrapper{ 	width:90%; max-width:1200px; margin:25px auto; background:url(images/top-bg.jpg) repeat-x top left #fff; padding-top:10px;
+.wrapper{ 	width:90%; max-width:1200px; margin:25px auto; background:url(../img/top-bg.jpg) repeat-x top left #fff; padding-top:10px;
 			-webkit-box-shadow: 0px 0px 45px -9px rgba(0,0,0,0.77); overflow:hidden;
 			-moz-box-shadow: 0px 0px 45px -9px rgba(0,0,0,0.77);
 			box-shadow: 0px 0px 45px -9px rgba(0,0,0,0.77);   	margin-bottom: -2px;}
 
 .header{ display:inline-block; margin-bottom:15px; }
-	a.logo{ display:inline-block; width:496px; height:164px; background:url(images/logo.jpg) no-repeat; margin-top:13px; margin-left:25px; float:left; max-width: 100%;}
+	a.logo{ display:inline-block; width:496px; height:164px; background:url(../img/logo.jpg) no-repeat; margin-top:13px; margin-left:25px; float:left; max-width: 100%;}
 	ul.menu{ float:right; list-style:none; margin:0; padding:0; margin-top: 10px;}
 	ul.menu li{ display:inline-block; margin:0; padding:0; }
 	ul.menu li a{ font-family: 'Lato', sans-serif; color:#17b4a8; font-size: 23px; text-transform:uppercase; text-decoration:none; margin-right:30px; }
 	.header h1{ font-family: 'IndieFlower'; color:#ff4150; border-bottom:1px solid #ff4150; float: right; margin-right: 25px; }
 
-.banner{ width:100%; padding-bottom:7px; background:url(images/top-bg.jpg) repeat-x bottom; }
+.banner{ width:100%; padding-bottom:7px; background:url(../img/top-bg.jpg) repeat-x bottom; }
 	.banner img{ width:100%; height:auto; }
 
-	.hover-banner{ width:410px; background:url(images/b1.png) no-repeat left bottom; padding-bottom:234px; position: relative;    margin-top: -485px;}
-		.bubble{ width:304px; height:239px; background:url(images/bb1.png) no-repeat; margin-left:105px; text-align:center; }
+	.hover-banner{ width:410px; background:url(../img/b1.png) no-repeat left bottom; padding-bottom:234px; position: relative;    margin-top: -485px;}
+		.bubble{ width:304px; height:239px; background:url(../img/bb1.png) no-repeat; margin-left:105px; text-align:center; }
 		.bubble p{ color:#005987; font-family: 'IndieFlower'; padding: 0 40px; display: inline-block; margin-top: 41px; font-size: 21px;}
 
 .content{ width:90%; margin:25px auto; }
@@ -139,13 +139,13 @@ a:hover{ text-decoration:none; } .f-left{ float:left; } .f-right{ float:right; }
 		display: none;
 	}
 	.amPmCheckbox input[type="checkbox"]+label {    
-		background: url('images/checkbox.jpg') no-repeat;
+		background: url('../img/checkbox.jpg') no-repeat;
 		height:25px;
 		padding-left: 40px;
 		padding-bottom: 18px;
 	}
 	.amPmCheckbox input[type="checkbox"]:checked + label {
-		background: url('images/checkbox_checked.jpg')  no-repeat;
+		background: url('../img/checkbox_checked.jpg')  no-repeat;
 		height:25px;
 	}
 
@@ -342,14 +342,14 @@ h2.f-right{ color:#17b4a8; border-bottom:1px solid #17b4a8; display:inline-block
 .separator {
 	width: 100%;
 	height: 10px;
-	background: url(images/top-bg.jpg);
+	background: url(../img/top-bg.jpg);
 	margin-top: 5px;
 }
 
 .separator-small {
 	width: 100%;
 	height: 5px;
-	background: url(images/top-bg.jpg);
+	background: url(../img/top-bg.jpg);
 	display: inline-block;
 	background-size: cover;
 	margin-bottom: 37px;
