@@ -31,7 +31,7 @@
 		<div class="pagetitle">
 			<h1>about us</h1>
 		</div>
-		
+
 		<div class="separator"></div>
 
 		<div class="content">
@@ -42,34 +42,43 @@
 			</div>
 			<img class="f-right puppy" src="../assets/img/dog_cat.jpg" alt="">
 			<div class="contact-container">
-				<form>
+				<form action="#" method="post" id="petAdd">
 					<h1>1. Your info</h1>
+
 					<div class="fieldname"><span>FULL NAME</span></div>
-					<input type="text" class="field">
+					<input type="text" class="field required">
+
 					<div class="fieldname"><span>PHONE</span></div>
-					<input type="text" class="field">
+					<input type="text" class="field required">
+
 					<div class="fieldname"><span>2nd PHONE</span></div>
 					<input type="text" class="field">
-					<div class="alert">Please enter a valid email address</div>
+
 					<div class="fieldname"><span>EMAIL</span></div>
-					<input type="text" class="field">
+					<input type="text" class="field required email">
+
 					<div class="fieldname"><span>STREET ADDRESS</span></div>
-					<input type="text" class="field">
+					<input type="text" class="field required">
+
 					<div class="half">
 						<div class="fieldname"><span>CITY</span></div>
-						<input type="text" class="field">
+						<input type="text" class="field required">
 					</div>
 					<div class="half">
 						<div class="fieldname"><span>ZIP</span></div>
-						<input type="text" class="field">
+						<input type="text" class="field required">
 					</div>
+
 					<h1>2. Billing info</h1>
+
 					<div class="amPmCheckbox">
 						<input name="check" id="check" type="checkbox"/>
 						<label class="label" for="check"> Same address as above?</label>
 					</div>
+
 					<div class="fieldname"><span>STREET ADDRESS</span></div>
 					<input type="text" class="field">
+
 					<div class="half">
 						<div class="fieldname"><span>CITY</span></div>
 						<input type="text" class="field">
@@ -78,9 +87,9 @@
 						<div class="fieldname"><span>ZIP</span></div>
 						<input type="text" class="field">
 					</div>
-					
+
 					<h1>3. Status updates</h1>
-					
+
 					<p class="question">Would you like to receive updates on your pets’ health and happiness?</p>
 					<div class="fieldname"><span>STATUS UPDATES</span></div>
 					<select class="field select-field">
@@ -100,7 +109,7 @@
 							<label class="label" for="text"> Text</label>
 						</div>
 					</div>
-					
+
 					<h1>4. Pet's info</h1>
 					<h2>First pet<h2>
 					<div class="half">
@@ -145,9 +154,9 @@
 					<div class="blank"></div>
 					<p class="question">Would you like to include another pet?</p>
 					<button class="contact-btn-more">ADD PET</button>
-					
+
 					<div class="blank"></div>
-					
+
 					<h1>5. Emergency info</h1>
 					<div class="fieldname"><span>PRIMARY CONTACT</span></div>
 					<input type="text" class="field">
@@ -157,7 +166,7 @@
 					<input type="text" class="field">
 					<div class="fieldname"><span>PHONE</span></div>
 					<input type="text" class="field">
-					
+
 					<h1>6. Veterinary info</h1>
 					<div class="fieldname"><span>VET'S NAME</span></div>
 					<input type="text" class="field">
@@ -171,7 +180,7 @@
 						<option>Select</option>
 					</select>
 					<div class="amPmCheckbox center_v">
-							<input id="terms" type="checkbox"/>
+							<input id="terms" type="checkbox" class="required"/>
 							<label class="label" for="terms"> Accept Terms and Conditions</label>
 							<input type="submit" class="contact-btn" value="SUBMIT">
 					</div>
@@ -179,7 +188,7 @@
 			</div>
 			<img src="../assets/img/dogs_cats.jpg" class="img-full">
 		</div>
-		
+
 
 		<div class="footer">
 			<div class="footer-links">
@@ -200,6 +209,13 @@
 		<p class="f-left">Copyright Forever PetPros Maui - Terms of Service - Privacy Policy</p>
 		<p class="f-right">This website was Made on Maui</p>
 	</div>
+
+
+	<script type="text/javascript" src="../assets/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../assets/js/fonts.js"></script>
+	<script type="text/javascript" src="../assets/js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="../assets/js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="../assets/js/script.js"></script>
 
 </body>
 </html>
