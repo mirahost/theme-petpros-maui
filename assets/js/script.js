@@ -1,6 +1,14 @@
 (function($){
 
+    // Ok, we have js loaded
     $('html').removeClass('no-js')
+
+    // Homepage hero slider
+    $('.homepage.banner > div').bxSlider({
+        controls : false,
+        pager : false,
+        auto : true
+    });
 
 })(jQuery);
 

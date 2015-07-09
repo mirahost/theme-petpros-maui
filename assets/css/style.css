@@ -510,28 +510,7 @@ ul.menu li a {
     width: 100%;
     height: auto;
 }
-.hover-banner {
-    width: 410px;
-    background: url(../img/b1.png) no-repeat left bottom;
-    padding-bottom: 234px;
-    position: relative;
-    margin-top: -485px;
-}
-.bubble {
-    width: 304px;
-    height: 239px;
-    background: url(../img/bb1.png) no-repeat;
-    margin-left: 105px;
-    text-align: center;
-}
-.bubble p {
-    color: #005987;
-    font-family: 'Indie Flower', cursive;
-    padding: 0 40px;
-    display: inline-block;
-    margin-top: 41px;
-    font-size: 21px;
-}
+
 .content {
     width: 90%;
     margin: 25px auto;
@@ -1094,16 +1073,16 @@ ul.footer-menu li a {
 .copyright p {
     color: #fff;
     background: #c1c1c1;
-    padding: 5px 0;
+    padding: 5px;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 600;
 }
 .copyright p.f-left {
-    margin-left: 60px;
+    margin-left: 6%;
 }
 .copyright p.f-right {
-    margin-right: 60px;
+    margin-right: 6%;
 }
 .pagetitle {
     background: #17b4a8;
@@ -1297,14 +1276,7 @@ dl {
     }
 }
 @media only screen and ( max-width: 1175px) {
-    .hover-banner {
-        background: none;
-        padding-bottom: 125px;
-        margin-top: -365px;
-    }
-    .bubble {
-        margin-left: 40px;
-    }
+
     .text-left {
         width: 75%;
     }
@@ -1349,12 +1321,7 @@ dl {
         float: inherit;
     }
 }
-@media only screen and ( max-width: 1000px) {
-    .hover-banner {
-        padding-bottom: 85px;
-        margin-top: -325px;
-    }
-}
+
 @media only screen and ( max-width: 950px) {
     .text-left {
         width: 70%;
@@ -1394,10 +1361,7 @@ dl {
     .column {
         width: 48%;
     }
-    .hover-banner {
-        padding-bottom: 35px;
-        margin-top: -274px;
-    }
+
 }
 @media only screen and ( max-width: 750px) {
     img.small-cat {
@@ -1445,12 +1409,6 @@ dl {
         display: none;
     }
 }
-@media only screen and ( max-width: 670px) {
-    .hover-banner {
-        padding-bottom: 16px;
-        margin-top: -255px;
-    }
-}
 @media only screen and ( max-width: 650px) {
     ul.menu li a {
         font-size: 18px;
@@ -1460,9 +1418,7 @@ dl {
         width: 100%;
         text-align: center;
     }
-    .hover-banner {
-        display: none;
-    }
+
     .content h1 {
         font-size: 40px;
         margin-top: 25px;
@@ -1470,8 +1426,6 @@ dl {
 }
 
 .petServices {
-    float: left;
-    width: 100%;
 }
 
 .petServices:before {
@@ -1494,6 +1448,12 @@ dl {
     margin: 50px 0 -120px 0;
     left: -50px;
     float: left;
+}
+
+.row {
+    float: left;
+    width: 100%;
+    clear: both;
 }
 
 /*Vendors*/
