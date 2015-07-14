@@ -1,0 +1,14 @@
+{
+  "collection_name": "hawaiicarrental.com",
+  "content_body": "Hello world",
+  "description": "",
+  "intro": "By far, the best deal on a car",
+  "meta": {
+    "status": "published"
+  },
+  "name": "Home",
+  "template": "services.html",
+  "theme": "theme-petpros-maui",
+  "title": "New Hawaii Car Rental",
+  "url": "/reservations/"
+}

@@ -1,0 +1,32 @@
+{
+    "home" : {
+        "path": "/",
+        "method": "GET",
+        "controller": "index"
+    },
+     "hawaii" : {
+        "path": "/about/",
+        "method": "GET",
+        "controller": "about"
+    },
+     "hawaii-island" : {
+        "path": "/hawaii/{island}/",
+        "method": "GET",
+        "controller": "hawaii"
+    },
+    "contact" : {
+      "path": "/contact/",
+      "method": "GET",
+      "controller": "contact"
+    },
+    "services" : {
+      "path": "/services/",
+      "method": "GET",
+      "controller": "services"
+    },
+     "agreement" : {
+        "path": "/agreement/",
+        "method": "GET",
+        "controller": "agreement"
+    }
+}
