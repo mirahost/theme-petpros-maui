@@ -536,7 +536,6 @@ ul.menu li a {
     font-size: 27px;
     margin: 40px 0 0 0;
     padding: 0;
-    /*text-align: center;*/
 }
 
 .content img.f-left {
@@ -898,12 +897,13 @@ img.turtle {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     text-align: center;
-    float: right;
+    display: inline-block;
     position: relative;
     -webkit-box-shadow: 10px 10px 47px -8px rgba(0, 0, 0, 0.57);
     -moz-box-shadow: 10px 10px 47px -8px rgba(0, 0, 0, 0.57);
     box-shadow: 10px 10px 47px -8px rgba(0, 0, 0, 0.57);
     z-index: 2;
+    margin: 0 -50px;
 }
 .inner-circle {
     display: inline-block;
@@ -944,7 +944,6 @@ img.turtle {
 }
 .c2 {
     background: #ff4150;
-    margin-right: -100px;
 }
 .c2 .inner-circle {
     background: #fcb300;
@@ -954,7 +953,6 @@ img.turtle {
 }
 .c3 {
     background: #af0062;
-    margin-right: -100px;
 }
 .c3 .inner-circle {
     background: #ff4150;
@@ -971,6 +969,7 @@ h2.f-right {
 
 .footer {
     clear: both;
+    padding-top: 20px;
 }
 
 .footer {} .footer-links {
@@ -1150,20 +1149,27 @@ ul.footer-menu li a {
     height: 10px;
     background: url(../img/separator.jpg);
 }
-.separator-small {
+
+hr {
     width: 100%;
     height: 5px;
-    background: url(../img/separator.jpg);
-    display: inline-block;
-    background-size: cover;
-    margin-bottom: 37px;
+    background: url(../img/separator.jpg) 100% 100%;
+    border: 0;
+    margin: 40px 0;
 }
 
-.circles-center {
-    display: inline-block;
-    position: relative;
-    margin: 0 auto;
+.circles {
+    text-align: center;
 }
+
+.circles a {
+    text-decoration: none;
+}
+
+.circles.row {
+    clear: both;
+}
+
 .content .lightblue {
     color: #17b4a8;
 }
@@ -1172,10 +1178,8 @@ ul.footer-menu li a {
 }
 .content .services-custom {
     text-decoration: underline;
-    position: relative;
-    top: 50px;
-    padding-bottom: 68px;
     text-align: center;
+    margin-bottom: 70px;
 }
 .content .center {
     width: auto;
@@ -1192,7 +1196,6 @@ ul.footer-menu li a {
 .content .services-include {
     float: left;
     font-size: 38px;
-    text-align: center;
 }
 .content .text-large {
     font-size: 25px;
@@ -1242,7 +1245,6 @@ ul.footer-menu li a {
 
 dl {
     font-size: 18px;
-    float: left;
     width: 100%;
 }
     dd,
@@ -1267,6 +1269,33 @@ dl {
     dd {
         margin-bottom: 20px;
     }
+
+dl.double-col {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+
+.priceBox {
+    color: #666666;
+}
+    .priceBox li {
+        display: inline-block;
+        vertical-align: top;
+        list-style-type: none;
+    }
+
+    .priceBox .label {
+        font-family: 'Indie Flower', cursive;
+        color: #ff4150;
+        margin-right: 20px;
+        font-size: 36px;
+    }
+
+    .priceBox small {
+        display: block;
+    }
+
 
 /*--- Fonts ---*/
 
@@ -1492,10 +1521,9 @@ dl {
     float: left;
 }
 
-.row {
-    float: left;
-    width: 100%;
-    clear: both;
+
+.services_page img.border {
+    border: 10px solid #fcb300;
 }
 
 /*Vendors*/
@@ -1540,5 +1568,11 @@ dl {
 
 .bx-wrapper .bx-pager .active {
     background: #fff;
+}
+
+.row {
+    float: left;
+    width: 100%;
+    clear: both;
 }
 
