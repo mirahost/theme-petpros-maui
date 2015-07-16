@@ -452,14 +452,14 @@ a:hover {
     width: 90%;
     max-width: 1200px;
     margin: 25px auto;
-    background: url(../img/top-bg.jpg) repeat-x top left #fff;
+    background: url(../img/separator.jpg) repeat-x top left #fff;
     padding-top: 10px;
     -webkit-box-shadow: 0px 0px 45px -9px rgba(0, 0, 0, 0.77);
-    overflow: hidden;
     -moz-box-shadow: 0px 0px 45px -9px rgba(0, 0, 0, 0.77);
     box-shadow: 0px 0px 45px -9px rgba(0, 0, 0, 0.77);
-    margin-bottom: -2px;
+    margin-bottom: 90px;
 }
+
 .header {
     display: inline-block;
     margin-bottom: 15px;
@@ -504,7 +504,7 @@ ul.menu li a {
 .banner {
     width: 100%;
     padding-bottom: 7px;
-    background: url(../img/top-bg.jpg) repeat-x bottom;
+    background: url(../img/separator.jpg) repeat-x bottom;
 }
 .banner img {
     width: 100%;
@@ -782,7 +782,7 @@ ul.mini-menu li a:hover {
     height: 22px;
     line-height: 22px;
     box-sizing: border-box;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     float: left;
     text-align: center;
     font-weight: bold;
@@ -796,7 +796,7 @@ ul.mini-menu li a:hover {
     width: 40%;
     height: 22px;
     line-height: 22px;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     float: left;
     text-align: center;
     font-weight: bold;
@@ -968,6 +968,11 @@ h2.f-right {
     display: inline-block;
     margin-top: 25px;
 }
+
+.footer {
+    clear: both;
+}
+
 .footer {} .footer-links {
     clear: both;
     text-align: center;
@@ -994,12 +999,28 @@ h2.f-right {
     font-weight: 600;
     margin-top: 40px;
 }
-.footer-links h1 {
-    color: #fcb300;
+
+.callUs {
     font-family: 'Indie Flower', cursive;
     font-weight: normal;
-    border-bottom: 1px solid #fcb300;
 }
+
+.callUs a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.footer .callUs {
+    text-align: center;
+    font-size: 60px;
+    padding: 20px 0;
+}
+
+.footer .callUs a {
+    color: #fcb300;
+    border-bottom: 5px solid #fcb300;
+}
+
 ul.footer-menu {
     width: 100%;
     margin: 0;
@@ -1013,7 +1034,6 @@ ul.footer-menu li {
     text-align: center;
     display: inline-block;
     float: left;
-    padding: 15px 0;
 }
 ul.footer-menu li:first-child {
     background: #17b4a8;
@@ -1061,14 +1081,15 @@ ul.footer-menu li a {
     font-family: 'Lato', sans-serif;
     color: #fff;
     font-size: 23px;
+    padding: 15px 0;
     display: block;
     text-transform: uppercase;
     text-decoration: none;
 }
 .copyright {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0px auto;
+    float: left;
+    width: 100%;
+    margin-bottom: -60px;
 }
 .copyright p {
     color: #fff;
@@ -1085,33 +1106,54 @@ ul.footer-menu li a {
     margin-right: 6%;
 }
 .pagetitle {
-    background: #17b4a8;
-    height: 80px;
-    padding: 0px;
-    color: #FFF;
-}
-.pagetitle h1 {
-    color: #FFF;
+    background-color: #17b4a8;
+    color: #fff;
     text-transform: uppercase;
-    font-size: 46px;
+    position: relative;
+}
+.pagetitle:after {
+    content: '';
+    background: url('../img/separator.jpg') no-repeat left bottom;
+    width: 100%;
+    height: 10px;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+}
+
+.pagetitle h1 {
     line-height: 80px;
+    font-size: 46px;
     font-weight: 100;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding-left: 60px;
+    text-indent: 60px;
     display: inline-block;
-    border-bottom: 10px solid #58afa8;
+}
+
+.pagetitle h1:after {
+    content: '';
+    display: block;
+    position: relative;
+    z-index: 2;
+    margin-bottom: -15px;
+    padding-right: 15px;
+    left: 0;
+    height: 10px;
+    width: 100%;
+    background: #17b4a8;
 }
 
 .separator {
     width: 100%;
     height: 10px;
-    background: url(../img/top-bg.jpg);
+    background: url(../img/separator.jpg);
 }
 .separator-small {
     width: 100%;
     height: 5px;
-    background: url(../img/top-bg.jpg);
+    background: url(../img/separator.jpg);
     display: inline-block;
     background-size: cover;
     margin-bottom: 37px;

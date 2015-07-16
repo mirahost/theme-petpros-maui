@@ -1,35 +1,8 @@
-<!DOCTYPE html>
-<html class="no-js">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>PetPros Maui | Professional care for your pets and home</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="{{assets_css}}style.css">
-    <script type="text/javascript" src="{{assets_js}}fonts.js"></script>
-</head>
-
-<body>
-
-	<div class="wrapper">
-		<div class="header">
-			<a href="/" class="logo"></a>
-
-			<h1>Give us a call  808-281-7075</h1>
-
-			<ul class="menu">
-				{% include 'includes/menu.html' %}
-			</ul>
-		</div>
+{% include 'includes/header.html' %}
 
 		<div class="pagetitle">
 			<h1>about us</h1>
 		</div>
-
-		<div class="separator"></div>
 
 		<div class="content">
 
@@ -82,28 +55,4 @@
 
 		</div>
 
-
-		<div class="footer">
-			<div class="footer-links">
-				<a href="#"><img src="{{assets_img}}f1.jpg" width="167" height="80" alt=""></a>
-				<a href="#"><img src="{{assets_img}}f2.jpg" width="99" height="80" alt=""></a>
-				<a href="#"><img src="{{assets_img}}f3.jpg" width="280" height="80" alt=""></a>
-				<a href="#"><img src="{{assets_img}}f4.jpg" width="156" height="80" alt=""></a>
-				<a href="#"><img src="{{assets_img}}f5.jpg" width="148" height="80" alt=""></a>
-
-				<p>Licensed - Bonded - Insured - Certified in Pet First Aid</p>
-			</div>
-
-			<ul class="footer-menu">
-				{% include 'includes/footer_menu.html' %}
-			</ul>
-		</div>
-	</div>
-
-	<div class="copyright">
-		<p class="f-left">Copyright Forever PetPros Maui - Terms of Service - Privacy Policy</p>
-		<p class="f-right">This website was Made on Maui</p>
-	</div>
-
-</body>
-</html>
+{% include 'includes/footer_partners.html' %}
