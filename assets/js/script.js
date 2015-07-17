@@ -7,7 +7,10 @@
     $('.homepage.banner > div').bxSlider({
         controls : false,
         pager : false,
-        auto : true
+        auto : true,
+        mode : 'fade',
+        speed : 1000,
+        randomStart : true
     });
 
 })(jQuery);
