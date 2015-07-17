@@ -474,26 +474,61 @@ a.logo {
     float: left;
     max-width: 100%;
 }
-ul.menu {
+
+#primaryNav {
     float: right;
-    list-style: none;
-    margin: 0;
-    padding: 0;
     margin-top: 10px;
-}
-ul.menu li {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-}
-ul.menu li a {
     font-family: 'Lato', sans-serif;
-    color: #17b4a8;
     font-size: 23px;
-    text-transform: uppercase;
-    text-decoration: none;
-    margin-right: 30px;
 }
+
+    #primaryNav li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-transform: uppercase;
+
+    }
+
+        #primaryNav > ul > li {
+            display: inline-block;
+        }
+
+            #primaryNav a {
+                color: #17b4a8;
+                text-decoration: none;
+                display: block;
+                margin-right: 30px;
+            }
+
+            #primaryNav a:hover,
+            #primaryNav li.active > a {
+                color: #fcb300;
+            }
+
+        #primaryNav ul ul {
+            width: 300px;
+            position: absolute;
+            display: none;
+            margin: 0;
+            padding: 0;
+            background:rgba(255, 255, 255, 0.95);
+            font-size: 16px;
+            z-index: 99;
+            border: 1px dashed #fcb300;
+        }
+            #primaryNav ul ul a {
+                padding: 5px 10px;
+                margin-right: 0;
+            }
+            #primaryNav ul ul li {
+                border-top: 1px dashed #fcb300;
+            }
+            #primaryNav ul ul li:first-child {
+                border-top: 0;
+            }
+
+
 .header h1 {
     font-family: 'Indie Flower', cursive;
     color: #ff4150;

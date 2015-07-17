@@ -3,6 +3,20 @@
     // Ok, we have js loaded
     $('html').removeClass('no-js')
 
+
+    $('#primaryNav li').on('mouseenter mouseleave', function(e){
+        var $this = $(this);
+        var $subnav = $('ul', $this);
+
+        if( $subnav.is(':animated') ) {
+            return false;
+        }
+
+        $subnav.slideToggle();
+        $this.toggleClass('active');
+
+    });
+
     // Homepage hero slider
     $('.homepage.banner > div').bxSlider({
         controls : false,
@@ -13,8 +27,10 @@
         randomStart : true
     });
 
-})(jQuery);
 
+
+
+})(jQuery);
 
 (function($){
 
