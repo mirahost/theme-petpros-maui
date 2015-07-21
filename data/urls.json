@@ -4,15 +4,15 @@
         "method": "GET",
         "controller": "index"
     },
-     "hawaii" : {
+     "about" : {
         "path": "/about/",
         "method": "GET",
         "controller": "about"
     },
-     "hawaii-island" : {
-        "path": "/hawaii/{island}/",
+     "faqs" : {
+        "path": "/faqs/",
         "method": "GET",
-        "controller": "hawaii"
+        "controller": "about"
     },
     "contact" : {
       "path": "/contact/",
