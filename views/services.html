@@ -1,22 +1,22 @@
 {% include 'includes/header.html' %}
 
 		<div class="pagetitle">
-			<h1>services</h1>
+			<h1>{{name}}</h1>
 		</div>
 
 		<div class="content services_page">
 
 			<img class="f-right" src="{{assets_img}}goat.jpg" alt="">
 
-			<h1>Professional Pet Services</h1>
-			<h2>PetPros Maui will care for pets of all shapes and sizes.</h2>
-			<p>Trusting the care of your animals to PetPros Maui’s trained staff is safer and healthier because lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+			<h1>{{heading}}</h1>
+			<h2>{{sub_heading}}</h2>
+                {{intro}}
 
 			<div class="circles row">
 				<div class="circle c1 hvr-grow-rotate">
 					<div class="inner-circle">
-						<div class="circle-content"><a href="#pet-visits">
-							<img src="{{assets_img}}img3.jpg" alt="">
+						<div class="circle-content"><a href="#pet-taxi">
+							<img src="{{assets_img}}img3.jpg" alt="PetPros Pet Taxi Service">
 							<span>pet taxi</span>
 						</a></div>
 					</div>
@@ -25,7 +25,7 @@
 				<div class="circle c2 hvr-grow-rotate">
 					<div class="inner-circle">
 						<div class="circle-content"><a href="#overnights">
-							<img src="{{assets_img}}img2.jpg" alt="">
+							<img src="{{assets_img}}img2.jpg" alt="PetPros Overnight Service">
 							<span>overnights</span>
 						</a></div>
 					</div>
@@ -34,14 +34,14 @@
 				<div class="circle c3 hvr-grow-rotate">
 					<div class="inner-circle">
 						<div class="circle-content"><a href="#play-visits">
-							<img src="{{assets_img}}img1.jpg" alt="">
+							<img src="{{assets_img}}img1.jpg" alt="PetPros Play Visit Service">
 							<span>play visits</span>
 						</a></div>
 					</div>
 				</div>
 			</div>
 
-			<h2 class="services-custom lightblue">Custom services are also available</h2>
+			<h2 class="services-custom lightblue"><a href="#custom">Custom services are also available</a></h2>
 
             <a name="play-visits"></a>
 
@@ -49,33 +49,37 @@
 
 			<img class="f-right border" src="{{assets_img}}dog_home.jpg" alt="">
 			<h1>Play Visits</h1>
-			<h2>PetPros Maui will care for pets of</h2>
-			<p>Trusting the care of your <a href="#">animals</a> to PetPros Maui’s trained staff is safer and healthier because lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+			<h2>PetPros love to play!</h2>
+            <p>For the busy and loving pet owner who can't be there for their pet as much as they would like to be!</p>
 
 
-			<h2 class="services-include darkblue">Walk & Play visits include any of the following:</h2>
+			<h2 class="services-include darkblue">Play Visits include any of the following:</h2>
 
 			<dl class="double-col">
-				<dt>Walking</dt>
-				<dd>We will take your furry friend for a stroll around the block</dd>
-				<dt>Playing</dt>
-				<dd>Does Fido love catch, frisbee, or laser tag? Let’s do all 3!</dd>
-				<dt>Medications</dt>
-				<dd>We will administer your pets medications as prescribed by you.</dd>
+				<dt>Playing or walking</dt>
+				<dd>Let us know what Fido or Fluffy loves doing!</dd>
 				<dt>Brushing</dt>
-				<dd>We’ll give your dog a brush and let him comb our hair.</dd>
+				<dd>A simple brushing or comb out? How fun!</dd>
+				<dt>Feeding</dt>
+				<dd>Just give us instructions and timing!</dd>
 				<dt>Scoops</dt>
-				<dd>Picking up after your pet is no problem.</dd>
-				<dt>Something Special</dt>
-				<dd>Let us know what your pet loves and we will include it in our visit.</dd>
+				<dd>We do that well either in the yard, litter box, or pad!</dd>
+				<dt>Medications</dt>
+				<dd>Absolutely!  We want Bosco and Belinda healthy!</dd>
+				<dt>Something Special?</dt>
+				<dd>We LOVE that!  Let us know what your pet's favorite fun is that will comfort him while you are away</dd>
 			</dl>
 
 			<ul class="priceBox">
-				<li class="label">Home visits pricing:</li>
+				<li class="label">Play Visit pricing:</li>
 				<li>
-					$30/ half hour minimum. $45/ hour.
-					<small>Packages of 10 can be purchased at a discounted rate.</small>
+                    Minimum visit 30 minutes (play package of 10) $30.00 each.
+					<small>Individual visits $32.00</small>
 				</li>
+                <li>
+                    1 hour (play package of 10) $40.00 each
+                    <small>Individual visits $42.00</small>
+                </li>
 			</ul>
 
             <a name="overnights"></a>
@@ -86,33 +90,35 @@
 
 			<h1>Overnights</h1>
 			<h2>Extended Play, Sit, and Home Secure</h2>
-			<p>Trusting the care of your <a href="#">animals</a> to PetPros Maui’s trained staff is safer and healthier because lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
 
+            <p><strong>Traveling?</strong> We can do sleepovers providing longer companionship with your pets and with added home services and security.</p>
 
-			<h2 class="services-include darkblue">Overnights are 12 hours minimum and include any of the following, both morning and evening:</h2>
-			<dl class="double-col">
-				<dt>Walking</dt>
-				<dd>We will take your furry friend for a stroll around the block</dd>
-				<dt>Playing</dt>
-				<dd>Does Fido love catch, frisbee, or laser tag? Let’s do all 3!</dd>
-				<dt>Medications</dt>
-				<dd>We will administer your pets medications as prescribed by you.</dd>
-				<dt>Brushing</dt>
-				<dd>We’ll give your dog a brush and let him comb our hair.</dd>
-				<dt>Scoops</dt>
-				<dd>Picking up after your pet is no problem.</dd>
-				<dt>Something Special</dt>
-				<dd>Let us know what your pet loves and we will include it in our visit.</dd>
-			</dl>
+			<h2 class="services-include darkblue">Overnights are a minimum of 12 hours including any or all of the following, both morning and evening:</h2>
+            <dl class="double-col">
+                <dt>Playing or walking</dt>
+                <dd>Let us know what Fido or Fluffy loves doing!</dd>
+                <dt>Brushing</dt>
+                <dd>A simple brushing or comb out? How fun!</dd>
+                <dt>Feeding</dt>
+                <dd>Just give us instructions and timing!</dd>
+                <dt>Scoops</dt>
+                <dd>We do that well either in the yard, litter box, or pad!</dd>
+                <dt>Medications</dt>
+                <dd>Absolutely!  We want Bosco and Belinda healthy!</dd>
+                <dt>Something Special?</dt>
+                <dd>We LOVE that!  Let us know what your pet's favorite fun is that will comfort him while you are away</dd>
+            </dl>
 
 
 			<p class="specification"><b><u>Additionally</u> we are ready and happy to take care of house services, such as: newspaper retrieval, turning on/off lights or alarm, mail pickup, watering plants, etc.</b></p>
 
 			<ul class="priceBox">
-				<li class="label">Home visits pricing:</li>
+				<li class="label">Overnights pricing:</li>
 				<li>
-					$30/ half hour minimum. $45/ hour.
-					<small>Packages of 10 can be purchased at a discounted rate.</small>
+                    5 or more evenings  $98.00 per evening.
+                </li>
+                <li>
+                    1 to 4 evenings $105.00 per evening.
 				</li>
 			</ul>
 
@@ -126,20 +132,23 @@
 			<h1>Pet Taxi</h1>
 			<h2>PetPros Maui will care for pets of</h2>
 			<p>- Does your pet need to go to the vet, groomer, or have any other pet transportation needs?</p>
-			<p>- Are there any errands you wish to have done whlle you are travelling or unavailable? (With pet in our out of car)</p>
+			<p>- Are there any errands you wish to have done while you are travelling or unavailable? (With pet in our out of car)</p>
 			<p>Our Petpros will use their own vehicle, which they are familiar with, that includes a pet restraint or secure kennel.</p>
 
-			<ul class="priceBox">
+            <ul class="priceBox">
 				<li class="label">Pet Taxi Pricing:</li>
-				<li>$0.57/mile plus $40/hour</li>
+				<li>$0.50/mile plus $40/hour (or calculated fraction if less)</li>
+
 			</ul>
 
-			<hr/>
+            <a name="custom"></a>
+
+            <hr/>
 
 			<div class="text-left-full">
 				<h1>Custom Packages</h1>
-				<h2>PetPros Maui will care for pets of all shapes and sizes.</h2>
-				<p>Trusting the care of your animals to PetPros Maui’s trained staff is safer and healthier because lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+				<h2>Let's woof and purr!</h2>
+				<p> What can we do special to help you and your pet family feel safe, secure and happy!</p>
 			</div>
 
 		</div>
