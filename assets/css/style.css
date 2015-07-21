@@ -448,6 +448,13 @@ a:hover {
 .clear {
     clear: both;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
 .wrapper {
     width: 90%;
     max-width: 1200px;
@@ -728,7 +735,6 @@ ul.mini-menu li a:hover {
     max-width: 90%;
     margin: 0 auto;
     padding-top: 75px;
-    display: table;
 }
 .half {
     width: 50%;
@@ -858,11 +864,13 @@ ul.mini-menu li a:hover {
     box-shadow: none;
     background: #af0062;
     height: 60px;
+    line-height: 60px;
     padding-left: 25px;
     padding-right: 25px;
     font-size: 25px;
     font-family: Lato;
     color: #FFF;
+    text-decoration: none;
     text-transform: uppercase;
     float: right;
     cursor: pointer;
@@ -1224,9 +1232,9 @@ hr {
     font-size: 26px;
     font-family: Lato;
     color: #005987;
-    margin-bottom: 35px;
-    display: inline-block;
     float: left;
+    padding: 0;
+    line-height: 60px;
 }
 .content .services-include {
     float: left;
@@ -1611,3 +1619,30 @@ dl.double-col {
     clear: both;
 }
 
+.js-petTemplate {
+    display: none;
+}
+
+.petForm {
+    float: left;
+    width: 100%;
+}
+
+.petBoxMeta {
+    margin-top: 30px;
+    float: left;
+    width: 100%;
+}
+
+.statusWays > * {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.statusWays > *:first-child {
+    margin-left: 0;
+}
+
+.fullImgWrapper {
+    text-align: center;
+}
