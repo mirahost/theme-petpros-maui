@@ -1,12 +1,11 @@
 {
-  "collection_name": "hawaiicarrental.com",
-  "content_body": "Hello world",
-  "description": "",
-  "intro": "By far, the best deal on a car",
+  "name": "Services",
+  "heading": "Professional Pet Services",
+  "sub_heading": "Our PetPros are qualified to care for everything from turtles to cattle!",
+  "intro": "&lt;p&gt;We have specialists skilled with experience to care for farm animals and special needs pets, as well as every furry or fuzzy in between.  Below is a sample offering to get you familiar with the basics but know that we can customize a program of visits to cover your special pets’ needs and desires!&lt;/p&gt;",
   "meta": {
     "status": "published"
   },
-  "name": "Home",
   "template": "services.html",
   "theme": "theme-petpros-maui",
   "title": "New Hawaii Car Rental",
