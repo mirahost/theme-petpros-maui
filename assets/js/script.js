@@ -68,3 +68,43 @@
     });
 
 })(jQuery);
+
+
+(function($){
+
+    var $template = $('.js-petTemplate');
+
+    if( !$template.length ) {
+        return false;
+    }
+
+    var $tpl = $template.html();
+    var index = 0;
+    var $wrapper = $('#petsBoxWrapper');
+    var defaultAdded = 1;
+
+    $template.remove();
+
+    $(document).on('click', '.js-petAdd', function(){
+        $wrapper.append( $tpl.replace('__COUNT__', ordinalInWord(index)) );
+        index++;
+
+        if( index > 9 ) {
+            $(this).fadeOut();
+            return false;
+        }
+
+        return false;
+    });
+
+    for( var i = 0; i < defaultAdded; i++ ) {
+        $('.js-petAdd').trigger('click');
+    }
+
+})(jQuery);
+
+
+function ordinalInWord( cardinal ) {
+    var ordinals = [ 'first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eighth', 'ninth', 'tenth' ];
+    return ordinals[cardinal];
+}
