@@ -27,9 +27,6 @@
         randomStart : true
     });
 
-
-
-
 })(jQuery);
 
 (function($){
@@ -37,10 +34,16 @@
     // Call plugins only on the pages where the plugin is loaded
     if( typeof $.fn.validate === 'undefined') return false;
 
-    $('#petAdd').validate({
-        ignore : '.ignore',
-        errorElement : 'span'
-    });
+    var settings = {
+        ignore : '.ignore, :hidden',
+        errorElement : 'span',
+        submitHandler : function( $form ){
+            $form.submit();
+        }
+    }
+
+    $('#petAdd').validate( settings );
+    $('#contactForm').validate( settings );
 
 })(jQuery);
 

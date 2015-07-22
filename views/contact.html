@@ -9,24 +9,46 @@
 			<img class="f-right" src="{{assets_img}}dog_cat_head.jpg" alt="">
 			<h1>{{heading}}</h1>
 			<h2>{{sub_heading}}</h2>
-            {{intro}}
+            <p>{{intro}}</p>
 
 			<div class="contact-container">
-				<form>
-					<div class="fieldname"><span>FULL NAME</span></div>
-					<input type="text" class="field">
-					<div class="fieldname"><span>PHONE</span></div>
-					<input type="text" class="field">
-					<div class="alert">Please enter a valid email address</div>
-					<div class="fieldname"><span>EMAIL</span></div>
-					<input type="text" class="field">
-					<div class="fieldname"><span>SERVICE AREA</span></div>
-					<input type="text" class="field">
-					<div class="fieldname">
-						<span>DETAILS</span>
-						<p>Please give us a brief description of the kind of TLC you are seeking for you pets. Please include the dates, the names of your pets, and the services you would like.<p>
+				<form method="post" action="#" id="contactForm">
+					<div class="field">
+						<span class="labelWrapper">
+							<label>FULL NAME</label>
+						</span>
+						<input type="text" name="full_name" class="required">
 					</div>
-					<textarea class="field field-lg"></textarea>
+
+					<div class="field">
+						<span class="labelWrapper">
+							<label>PHONE</label>
+						</span>
+						<input type="text" name="phone" class="required">
+					</div>
+					<div class="field">
+						<span class="labelWrapper">
+							<label>EMAIL</label>
+						</span>
+						<input type="text" name="email" class="required email">
+					</div>
+					<div class="field">
+						<span class="labelWrapper">
+							<label>SERVICE AREA</label>
+						</span>
+						<input type="text" name="service_area" class="required">
+					</div>
+
+					<div class="field">
+						<span class="labelWrapper">
+							<label>DETAILS</label>
+							<p>Please give us a brief description of the kind of TLC you are seeking for you pets. Please include the dates, the names of your pets, and the services you would like.</p>
+						</span>
+						<textarea name="details" class="field field-lg required"></textarea>
+
+					</div>
+
+
 					<input type="submit" value="Submit" class="contact-btn">
 				</form>
 			</div>

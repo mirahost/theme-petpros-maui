@@ -779,26 +779,63 @@ ul.mini-menu li a:hover {
     background: url('../img/checkbox_checked.jpg') no-repeat;
     height: 25px;
 }
+
+
+.field {
+    width: 100%;
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+    float: left;
+    margin-bottom: 13px;
+}
+
+    .field .labelWrapper {
+        width: 38%;
+        margin-right: 2%;
+        float: left;
+    }
+
+        .field .labelWrapper label {
+            background: #005987;
+            color: #FFF;
+            padding: 0 10px;
+            line-height: 37px;
+            display: block;
+            font-size: 25px;
+            text-indent: 15px;
+        }
+
+        .field .labelWrapper p {
+            padding: 10px 5px 0;
+            font-size: 18px;
+        }
+
+    .field .labelWrapper + * {
+        height: 37px;
+        width: 60%;
+        padding: 0;
+        border: 3px solid #005987;
+        float: left;
+        text-indent: 15px;
+        box-sizing: border-box;
+    }
+
 .content .label {
     line-height: 25px;
     font-family: Lato;
     font-size: 22px;
-    color: #005987;
 }
 .content .fieldname p {
     font-family: Verdana;
 }
 .content .field {
-    width: 60%;
-    height: 37px;
-    line-height: 37px;
-    box-sizing: border-box;
-    border: 3px solid #005987;
-    font-family: Lato;
-    float: left;
-    margin-bottom: 13px;
-    text-indent: 15px;
+
 }
+
+    .content .field input {
+
+    }
+
 .content select {
     color: #005987;
     text-align: center;
