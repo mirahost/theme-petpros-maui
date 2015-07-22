@@ -7,17 +7,22 @@
   "about" : {
     "path": "/about/",
     "method": "GET",
-    "controller": "content"
+    "controller": "about"
   },
   "faqs" : {
     "path": "/faqs/",
     "method": "GET",
-    "controller": "content"
+    "controller": "faqs"
   },
   "policies" : {
     "path": "/policies/",
     "method": "GET",
-    "controller": "content"
+    "controller": "policies"
+  },
+  "terms" : {
+    "path": "/terms/",
+    "method": "GET",
+    "controller": "terms"
   },
   "contact" : {
     "path": "/contact/",
