@@ -8,6 +8,5 @@
   "name": "Home",
   "template": "contact.html",
   "theme": "theme-petpros-maui",
-  "title": "New Hawaii Car Rental",
-  "url": "/contact/"
+  "title": "Contact PetPros Maui"
 }

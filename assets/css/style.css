@@ -571,7 +571,7 @@ a.logo {
     margin-top: 5px;
 }
 
-.content h2 {
+.content h2, .footer h2 {
     font-family: 'Indie Flower', cursive;
     font-weight: normal;
     color: #ff4150;

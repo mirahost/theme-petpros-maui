@@ -37,13 +37,27 @@
     var settings = {
         ignore : '.ignore, :hidden',
         errorElement : 'span',
-        submitHandler : function( $form ){
-            $form.submit();
-        }
-    }
+    });
 
-    $('#petAdd').validate( settings );
-    $('#contactForm').validate( settings );
+})(jQuery);
+
+(function($){
+
+    /*
+    $('.terms').bPopup({
+        content:'iframe', //'ajax', 'iframe' or 'image'
+        contentContainer:'.content',
+        loadUrl:'/terms/' //Uses jQuery.load()
+    });
+*/
+    $('.terms').on('click', function(e){
+
+        $(this).bPopup({
+            content:'iframe', //'ajax', 'iframe' or 'image'
+            contentContainer:'.content',
+            loadUrl:'/terms/' //Uses jQuery.load()
+        });
+
 
 })(jQuery);
 

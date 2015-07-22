@@ -1,4 +1,5 @@
 {
+  "name": "Agreement",
   "heading": "Service Agreement",
   "sub_heading": "All of our PetPros are Pet Professionals!",
   "intro": "Trusting the care of your animals to PetPros Maui’s trained staff is safer and healthier because lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudd",
@@ -6,9 +7,7 @@
   "meta": {
     "status": "published"
   },
-  "name": "Agreement",
   "template": "agreement.html",
   "theme": "theme-petpros-maui",
-  "title": "New Hawaii Car Rental",
-  "url": "/quote/"
+  "title": "PetPros Maui - Service Agreement"
 }
