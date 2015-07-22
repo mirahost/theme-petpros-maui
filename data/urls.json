@@ -1,32 +1,37 @@
 {
-    "home" : {
-        "path": "/",
-        "method": "GET",
-        "controller": "index"
-    },
-     "about" : {
-        "path": "/about/",
-        "method": "GET",
-        "controller": "about"
-    },
-     "faqs" : {
-        "path": "/faqs/",
-        "method": "GET",
-        "controller": "about"
-    },
-    "contact" : {
-      "path": "/contact/",
-      "method": "GET",
-      "controller": "contact"
-    },
-    "services" : {
-      "path": "/services/",
-      "method": "GET",
-      "controller": "services"
-    },
-     "agreement" : {
-        "path": "/agreement/",
-        "method": "GET",
-        "controller": "agreement"
-    }
+  "home" : {
+    "path": "/",
+    "method": "GET",
+    "controller": "index"
+  },
+  "about" : {
+    "path": "/about/",
+    "method": "GET",
+    "controller": "content"
+  },
+  "faqs" : {
+    "path": "/faqs/",
+    "method": "GET",
+    "controller": "content"
+  },
+  "policies" : {
+    "path": "/policies/",
+    "method": "GET",
+    "controller": "content"
+  },
+  "contact" : {
+    "path": "/contact/",
+    "method": "GET",
+    "controller": "contact"
+  },
+  "services" : {
+    "path": "/services/",
+    "method": "GET",
+    "controller": "services"
+  },
+  "agreement" : {
+    "path": "/agreement/",
+    "method": "GET",
+    "controller": "agreement"
+  }
 }
