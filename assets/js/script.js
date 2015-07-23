@@ -84,6 +84,22 @@
         })
     });
 
+    // Modal defaults update
+    $.modal.defaults = {
+        overlay: "#000",
+        opacity: 0.5,
+        zIndex: 99,
+        escapeClose: true,
+        clickClose: true,
+        closeText: "&#10006;",
+        closeClass: '',
+        showClose: true,
+        modalClass: "modal",
+        spinnerHtml: null,
+        showSpinner: false,
+        fadeDuration: null,
+        fadeDelay: 1.0
+    };
 
 })(jQuery);
 
