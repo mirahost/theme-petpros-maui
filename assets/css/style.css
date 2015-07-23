@@ -736,12 +736,21 @@ ul.mini-menu li a:hover {
     margin: 0 auto;
     padding-top: 75px;
 }
-.half {
-    width: 50%;
+.half-split {
+    width: 100%;
     float: left;
-    box-sizing: border-box;
-    padding-right: 10px;
 }
+    .half-split > * {
+        float: left;
+        width: 50% !important;
+        padding-left: 2%;
+        box-sizing: border-box;
+    }
+    .half-split > *:first-child {
+        padding-left: 0;
+    }
+
+
 .content .fieldname {
     width: 40%;
     height: 37px;
@@ -783,15 +792,14 @@ ul.mini-menu li a:hover {
 
 .field {
     width: 100%;
-    font-size: 22px;
+    font-size: 21px;
     font-family: 'Lato', sans-serif;
     float: left;
     margin-bottom: 13px;
 }
 
     .field .labelWrapper {
-        width: 38%;
-        margin-right: 2%;
+        width: 40%;
         float: left;
     }
 
@@ -801,7 +809,7 @@ ul.mini-menu li a:hover {
             padding: 0 10px;
             line-height: 37px;
             display: block;
-            font-size: 25px;
+            font-size: 19px;
             text-indent: 15px;
         }
 
@@ -812,7 +820,8 @@ ul.mini-menu li a:hover {
 
     .field .labelWrapper + * {
         height: 37px;
-        width: 60%;
+        width: 58%;
+        margin-left: 2%;
         padding: 0;
         border: 3px solid #005987;
         float: left;

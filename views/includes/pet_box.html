@@ -1,42 +1,72 @@
 <div class="petForm">
     <h2>__COUNT__ pet</h2>
-    <div class="half">
-        <div class="fieldname"><span>NAME</span></div>
-        <input type="text" name="pet_name[]" class="field">
-    </div>
-    <div class="half">
-        <div class="fieldname"><span>TYPE</span></div>
-        <select name="type[]" class="field">
-            <option>Select</option>
-        </select>
-    </div>
-    <div class="half">
-        <div class="fieldname"><span>AGE</span></div>
-        <input type="text" name="age[]" class="field">
-    </div>
-    <div class="half">
-        <div class="fieldname"><span>GENDER</span></div>
-        <select name="gender[]" class="field">
-            <option>Select</option>
-        </select>
-    </div>
+    <div class="half-split">
+        <div class="field">
+            <span class="labelWrapper">
+                <label>NAME</label>
+            </span>
+            <input type="text" name="pet_name[]" class="required">
+        </div>
+
+        <div class="field">
+            <span class="labelWrapper">
+                <label>TYPE</label>
+            </span>
+            <select name="type[]">
+                <option value="-1">Type</option>
+                <option value="">Option #1</option>
+                <option value="">Option #2</option>
+                <option value="">Option #3</option>
+            </select>
+        </div>
+    </div><!--/.half-split-->
+
+    <div class="half-split">
+        <div class="field">
+            <span class="labelWrapper">
+                <label>AGE</label>
+            </span>
+            <input type="text" name="age" class="required">
+        </div>
+
+        <div class="field">
+            <span class="labelWrapper">
+                <label>GENDER</label>
+            </span>
+            <select name="gender[]">
+                <option value="m">M</option>
+                <option value="f">F</option>
+            </select>
+        </div>
+    </div><!--/.half-split-->
+
     <div class="amPmCheckbox">
             <input id="spayed" name="spayed[]" type="checkbox"/>
             <label class="label" for="spayed"> Has your pet been Spayed / Neutered?</label>
     </div>
-    <div class="fieldname">
-        <span>DESCRIPTION</span>
-        <p class="area_desc">Please provide a brief description of your pet.<p>
+
+    <div class="field">
+        <span class="labelWrapper">
+            <label>DESCRIPTION</label>
+            <p>Please provide a brief description of your pet.</p>
+        </span>
+        <textarea name="description[]"></textarea>
     </div>
-    <textarea name="description" class="field field-md"></textarea>
-    <div class="fieldname">
-        <span>FEEDING</span>
-        <p class="area_desc">What are your pet’s feding and supplement instructions?<p>
+
+    <div class="field">
+        <span class="labelWrapper">
+            <label>FEEDING</label>
+            <p>What are your pet’s feding and supplement instructions?</p>
+        </span>
+        <textarea name="feeding[]"></textarea>
     </div>
-    <textarea name="feeding[]" class="field field-md"></textarea>
-    <div class="fieldname">
-        <span>ACTIVITY</span>
-        <p class="area_desc">What are your pet’s activity intrucitons for walking, playing, grooming, etc?<p>
+
+    <div class="field">
+        <span class="labelWrapper">
+            <label>ACTIVITY</label>
+            <p>What are your pet’s activity intrucitons for walking, playing, grooming, etc?</p>
+        </span>
+        <textarea name="activity[]"></textarea>
     </div>
-    <textarea name="activity[]" class="field field-md"></textarea>
+
 </div>

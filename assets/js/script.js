@@ -66,6 +66,25 @@
     });
 
 
+    // Billing sync fields
+    var fields = {
+        'street_address' : 'billing_street_address',
+        'city' : 'billing_city',
+        'zip' : 'billing_zip'
+    };
+
+    $('.js-addressSync').on('click', function(){
+        $.each(fields, function( base, billing ){
+            var $base = $('input[name="' + base + '"]');
+            var $billing = $('input[name="' + billing + '"]');
+
+            if( !$base.length || !$billing.length || $billing.val() !== '' ) return true;
+
+            $billing.val( $base.val() );
+        })
+    });
+
+
 })(jQuery);
 
 
