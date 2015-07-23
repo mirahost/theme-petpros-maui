@@ -27,42 +27,23 @@
         randomStart : true
     });
 
-})(jQuery);
-
-(function($){
-
-    // Call plugins only on the pages where the plugin is loaded
-    if( typeof $.fn.validate === 'undefined') return false;
-
-    var settings = {
+    // Validator
+    var validatorSettings = {
         ignore : '.ignore, :hidden',
         errorElement : 'span',
-    });
+        submitHandler : function( $form ){
+            $form.submit();
+        }
+    }
 
-})(jQuery);
+    if( $('#petAdd').length )
+        $('#petAdd').validate( validatorSettings );
 
-(function($){
-
-    /*
-    $('.terms').bPopup({
-        content:'iframe', //'ajax', 'iframe' or 'image'
-        contentContainer:'.content',
-        loadUrl:'/terms/' //Uses jQuery.load()
-    });
-*/
-    $('.terms').on('click', function(e){
-
-        $(this).bPopup({
-            content:'iframe', //'ajax', 'iframe' or 'image'
-            contentContainer:'.content',
-            loadUrl:'/terms/' //Uses jQuery.load()
-        });
+    if ( $('#contactForm').length )
+        $('#contactForm').validate( validatorSettings );
 
 
-})(jQuery);
-
-(function($){
-
+    // Partners slider
     var $partnersSlider = $('.footer-links .slider');
 
     // Init partners slider after all images are loaded
@@ -84,11 +65,48 @@
         });
     });
 
+
+    // Billing sync fields
+    var fields = {
+        'street_address' : 'billing_street_address',
+        'city' : 'billing_city',
+        'zip' : 'billing_zip'
+    };
+
+    $('.js-addressSync').on('click', function(){
+        $.each(fields, function( base, billing ){
+            var $base = $('input[name="' + base + '"]');
+            var $billing = $('input[name="' + billing + '"]');
+
+            if( !$base.length || !$billing.length || $billing.val() !== '' ) return true;
+
+            $billing.val( $base.val() );
+        })
+    });
+
+    // Modal defaults update
+    $.modal.defaults = {
+        overlay: "#000",
+        opacity: 0.5,
+        zIndex: 99,
+        escapeClose: true,
+        clickClose: true,
+        closeText: "&#10006;",
+        closeClass: '',
+        showClose: true,
+        modalClass: "modal",
+        spinnerHtml: null,
+        showSpinner: false,
+        fadeDuration: null,
+        fadeDelay: 1.0
+    };
+
 })(jQuery);
 
 
 (function($){
 
+    // Add pet
     var $template = $('.js-petTemplate');
 
     if( !$template.length ) {

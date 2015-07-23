@@ -736,12 +736,21 @@ ul.mini-menu li a:hover {
     margin: 0 auto;
     padding-top: 75px;
 }
-.half {
-    width: 50%;
+.half-split {
+    width: 100%;
     float: left;
-    box-sizing: border-box;
-    padding-right: 10px;
 }
+    .half-split > * {
+        float: left;
+        width: 50% !important;
+        padding-left: 2%;
+        box-sizing: border-box;
+    }
+    .half-split > *:first-child {
+        padding-left: 0;
+    }
+
+
 .content .fieldname {
     width: 40%;
     height: 37px;
@@ -783,15 +792,14 @@ ul.mini-menu li a:hover {
 
 .field {
     width: 100%;
-    font-size: 22px;
+    font-size: 21px;
     font-family: 'Lato', sans-serif;
     float: left;
     margin-bottom: 13px;
 }
 
     .field .labelWrapper {
-        width: 38%;
-        margin-right: 2%;
+        width: 40%;
         float: left;
     }
 
@@ -801,7 +809,7 @@ ul.mini-menu li a:hover {
             padding: 0 10px;
             line-height: 37px;
             display: block;
-            font-size: 25px;
+            font-size: 19px;
             text-indent: 15px;
         }
 
@@ -812,7 +820,8 @@ ul.mini-menu li a:hover {
 
     .field .labelWrapper + * {
         height: 37px;
-        width: 60%;
+        width: 58%;
+        margin-left: 2%;
         padding: 0;
         border: 3px solid #005987;
         float: left;
@@ -856,14 +865,9 @@ ul.mini-menu li a:hover {
 .content span.error {
     color: #ff4150;
     width: 100%;
-    height: 22px;
-    line-height: 22px;
-    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    float: left;
     text-align: center;
     font-weight: bold;
-    margin-bottom: 13px;
     font-size: 18px;
     display: inline-block;
 }
@@ -1608,6 +1612,50 @@ dl.double-col {
 
 /*Vendors*/
 
+/*jquery modal*/
+
+.modal {
+  display: none;
+  width: 400px;
+  background: #fff;
+  padding: 15px 30px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 10px #000;
+  -moz-box-shadow: 0 0 10px #000;
+  -o-box-shadow: 0 0 10px #000;
+  -ms-box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 10px #000;
+}
+
+.modal a.close-modal {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: block;
+  font-size: 20px;
+  color:#000;
+  text-decoration: none;
+}
+
+.modal-spinner {
+  display: none;
+  width: 64px;
+  height: 64px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -32px;
+  margin-top: -32px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+}
 
 /*bxSlider*/
 .bx-wrapper {
