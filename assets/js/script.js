@@ -27,42 +27,23 @@
         randomStart : true
     });
 
-})(jQuery);
-
-(function($){
-
-    // Call plugins only on the pages where the plugin is loaded
-    if( typeof $.fn.validate === 'undefined') return false;
-
-    var settings = {
+    // Validator
+    var validatorSettings = {
         ignore : '.ignore, :hidden',
         errorElement : 'span',
-    });
+        submitHandler : function( $form ){
+            $form.submit();
+        }
+    }
 
-})(jQuery);
+    if( $('#petAdd').length )
+        $('#petAdd').validate( validatorSettings );
 
-(function($){
-
-    /*
-    $('.terms').bPopup({
-        content:'iframe', //'ajax', 'iframe' or 'image'
-        contentContainer:'.content',
-        loadUrl:'/terms/' //Uses jQuery.load()
-    });
-*/
-    $('.terms').on('click', function(e){
-
-        $(this).bPopup({
-            content:'iframe', //'ajax', 'iframe' or 'image'
-            contentContainer:'.content',
-            loadUrl:'/terms/' //Uses jQuery.load()
-        });
+    if ( $('#contactForm').length )
+        $('#contactForm').validate( validatorSettings );
 
 
-})(jQuery);
-
-(function($){
-
+    // Partners slider
     var $partnersSlider = $('.footer-links .slider');
 
     // Init partners slider after all images are loaded
@@ -84,11 +65,13 @@
         });
     });
 
+
 })(jQuery);
 
 
 (function($){
 
+    // Add pet
     var $template = $('.js-petTemplate');
 
     if( !$template.length ) {
