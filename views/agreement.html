@@ -13,22 +13,22 @@
 				<form action="/agreement/" method="POST">
 					<h1>1. Your info</h1>
 					<div class="fieldname"><span>FULL NAME</span></div>
-					<input type="text" class="field">
+					<input type="text" class="field" name="full_name">
 					<div class="fieldname"><span>PHONE</span></div>
-					<input type="text" class="field">
+					<input type="text" class="field" name="phone">
 					<div class="fieldname"><span>2nd PHONE</span></div>
-					<input type="text" class="field">
+					<input type="text" class="field" name="2nd_phone">
 					<div class="fieldname"><span>EMAIL</span></div>
-					<input type="text" class="field">
+					<input type="text" class="field" name="email">
 					<div class="fieldname"><span>STREET ADDRESS</span></div>
-					<input type="text" class="field">
+					<input type="text" class="field" name="street_address">
 					<div class="half">
 						<div class="fieldname"><span>CITY</span></div>
-						<input type="text" class="field">
+						<input type="text" class="field" name="city">
 					</div>
 					<div class="half">
 						<div class="fieldname"><span>ZIP</span></div>
-						<input type="text" class="field">
+						<input type="text" class="field" name="zip">
 					</div>
 					<h1>2. Billing info</h1>
 					<div class="amPmCheckbox">
@@ -36,14 +36,14 @@
 						<label class="label" for="check"> Same address as above?</label>
 					</div>
 					<div class="fieldname"><span>STREET ADDRESS</span></div>
-					<input type="text" class="field">
+					<input type="text" class="field" name="billing_street_address">
 					<div class="half">
 						<div class="fieldname"><span>CITY</span></div>
-						<input type="text" class="field">
+						<input type="text" class="field" name="billing_city">
 					</div>
 					<div class="half">
 						<div class="fieldname"><span>ZIP</span></div>
-						<input type="text" class="field">
+						<input type="text" class="field" name="billing_zip">
 					</div>
 
 					<h1>3. Status updates</h1>
@@ -55,15 +55,15 @@
 					</select>
 					<div class="statusWays">
 						<div class="amPmCheckbox">
-							<input id="mail" type="checkbox"/>
+							<input id="mail" type="checkbox" name="status_updates[]" value="email"/>
 							<label class="label" for="mail"> Email</label>
 						</div>
 						<div class="amPmCheckbox">
-							<input id="phone" type="checkbox"/>
+							<input id="phone" type="checkbox" name="status_updates[]" value="phone"/>
 							<label class="label" for="phone"> Phone</label>
 						</div>
 						<div class="amPmCheckbox">
-							<input id="text" type="checkbox"/>
+							<input id="text" type="checkbox" name="status_updates[]" value="text"/>
 							<label class="label" for="text"> Text</label>
 						</div>
 					</div>
@@ -83,28 +83,26 @@
 
 					<h1>5. Emergency info</h1>
 					<div class="fieldname"><span>PRIMARY CONTACT</span></div>
-					<input type="text" class="field">
+					<input type="text" class="field" name="emergency_contact_primary">
 					<div class="fieldname"><span>PHONE</span></div>
-					<input type="text" class="field">
+					<input type="text" class="field"  name="emergency_contact_primary_phone">
 					<div class="fieldname"><span>2nd CONTACT</span></div>
-					<input type="text" class="field">
+					<input type="text" class="field"  name="emergency_contact_2nd">
 					<div class="fieldname"><span>PHONE</span></div>
-					<input type="text" class="field">
+					<input type="text" class="field"  name="emergency_contact_2nd_phone">
 
 					<h1>6. Veterinary info</h1>
 					<div class="fieldname"><span>VET'S NAME</span></div>
-					<input type="text" class="field">
+					<input type="text" class="field"  name="vets_name">
 					<div class="fieldname"><span>PHONE</span></div>
-					<input type="text" class="field">
+					<input type="text" class="field" name="vets_phone">
 					<div class="fieldname"><span>ADDRESS</span></div>
-					<input type="text" class="field">
+					<input type="text" class="field" name="vets_address">
 					<p class="question">Do I have your permission to take your pet(s) to this veterinarian if I deem it necessary and  am not able to contact you or your emergency contacts?</p>
 					<div class="fieldname"><span>PERMISSION</span></div>
-					<select class="field">
-						<option>Select</option>
-					</select>
+                    <input id="permission" type="checkbox" name="permission" value="yes"/>
 					<div class="amPmCheckbox center_v">
-							<input id="terms" type="checkbox"/>
+							<input id="terms" type="checkbox" name="terms" value="yes"/>
 							<label class="label terms" for="terms">Accept Terms and Conditions</label>
 							<input type="submit" class="contact-btn" value="SUBMIT">
 					</div>
