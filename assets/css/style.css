@@ -1616,7 +1616,9 @@ dl.double-col {
 
 .modal {
   display: none;
-  width: 400px;
+  width: 80%;
+  height: 400px;
+  overflow: scroll;
   background: #fff;
   padding: 15px 30px;
   -webkit-border-radius: 8px;
@@ -1633,8 +1635,8 @@ dl.double-col {
 
 .modal a.close-modal {
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 10px;
+  right: 10px;
   display: block;
   font-size: 20px;
   color:#000;
