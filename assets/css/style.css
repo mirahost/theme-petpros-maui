@@ -1480,7 +1480,6 @@ dl.double-col {
     .circle {
         clear: both;
         margin: 0 auto;
-        float: inherit;
     }
 }
 
@@ -1545,6 +1544,24 @@ dl.double-col {
             position: static;
             margin: auto;
         }
+
+    .field .labelWrapper,
+    .field .labelWrapper + * {
+        width: 100%;
+    }
+
+    .field .labelWrapper {
+        margin-bottom: 5px;
+    }
+
+    .field .labelWrapper + * {
+        margin-left: 0;
+    }
+
+    img.f-right,
+    img.f-left {
+        float: none;
+    }
 
 }
 @media only screen and ( max-width: 700px) {
