@@ -484,28 +484,36 @@ a.logo {
 
 #primaryNav {
     float: right;
-    margin-top: 10px;
+    margin-top: 25px;
     font-family: 'Lato', sans-serif;
     font-size: 23px;
+    text-align: center;
+    padding-right: 25px;
 }
 
-    #primaryNav li {
+    #primaryNav ul {
         margin: 0;
+        padding: 0;
+    }
+
+    #primaryNav li {
         padding: 0;
         list-style: none;
         text-transform: uppercase;
-
     }
 
         #primaryNav > ul > li {
             display: inline-block;
+            margin-right: 30px;
+        }
+        #primaryNav > ul > li:last-child {
+            margin-right: 0;
         }
 
             #primaryNav a {
                 color: #17b4a8;
                 text-decoration: none;
                 display: block;
-                margin-right: 30px;
             }
 
             #primaryNav a:hover,
@@ -1019,6 +1027,7 @@ img.turtle {
 }
 .c1 {
     background: #fcb300;
+    z-index: 1;
 }
 .c1 .inner-circle {
     background: #17b4a8;
@@ -1037,6 +1046,7 @@ img.turtle {
 }
 .c3 {
     background: #af0062;
+    z-index: 3;
 }
 .c3 .inner-circle {
     background: #ff4150;
@@ -1392,14 +1402,6 @@ dl.double-col {
 }
 /*--- Responsive ---*/
 
-@media only screen and ( max-width: 1285px) {
-    img.big-cat {
-        display: none;
-    }
-    img.small-cat {
-        margin-left: 0;
-    }
-}
 @media only screen and ( max-width: 1235px) {
     .header {
         width: 100%;
@@ -1413,22 +1415,28 @@ dl.double-col {
     .header h1 {
         clear: both;
         float: inherit;
+        margin-right: 0;
     }
-    ul.menu {
-        float: inherit;
+
+    #primaryNav {
+        float: none;
+        margin-top: 0;
+        padding-right: 0;
+        width: 100%;
+        text-align: center;
     }
-    ul.menu li a {
-        margin: 0 15px;
-    }
+
 }
 @media only screen and ( max-width: 1225px) {
-    img.dog {
-        display: none;
-    }
     .circles {
         display: inline-block;
         margin-top: 25px;
     }
+
+    .petServices > img {
+        display: none;
+    }
+
 }
 @media only screen and ( max-width: 1175px) {
 
@@ -1449,12 +1457,8 @@ dl.double-col {
     }
 }
 @media only screen and ( max-width: 1075px) {
-    img.small-cat {
-        top: 25px;
-    }
-    img.turtle {
-        margin-left: 0;
-    }
+
+
     .copyright p.f-left,
     .copyright p.f-right {
         width: 100%;
@@ -1462,9 +1466,12 @@ dl.double-col {
         text-align: center;
         overflow: hidden;
         margin: 0;
+        padding: 10px 0;
         display: inline-block;
         background: #c1c1c1;
     }
+
+
 }
 @media only screen and ( max-width: 1050px) {
     .circles {
@@ -1519,13 +1526,26 @@ dl.double-col {
 
 }
 @media only screen and ( max-width: 750px) {
-    img.small-cat {
-        display: none;
-    }
+
     .text-right {
         text-align: center;
         width: 100%;
     }
+
+
+    #primaryNav {}
+
+        #primaryNav > ul > li {
+            display: block;
+            margin: 10px 0;
+        }
+
+        #primaryNav ul ul {
+            display: block;
+            position: static;
+            margin: auto;
+        }
+
 }
 @media only screen and ( max-width: 700px) {
     .copyright p {
@@ -1539,30 +1559,12 @@ dl.double-col {
     .content .text-left p {
         width: 100%;
     }
-    img.parrot,
-    img.puppy {
-        display: none;
-    }
+
     .column h2 {
         font-size: 25px;
     }
-    .text-left-2-3 {
-        width: 100%;
-        padding-right: 0px;
-    }
-    .image-1-3 {
-        width: 100%;
-    }
-    .content .field {
-        width: 100%;
-    }
-    .content .fieldname {
-        width: 100%;
-    }
-    .alert:before {
-        content: "";
-        display: none;
-    }
+
+
 }
 @media only screen and ( max-width: 650px) {
     ul.menu li a {
