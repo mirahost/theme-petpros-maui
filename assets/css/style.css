@@ -1708,6 +1708,10 @@ dl.double-col {
     clear: both;
 }
 
+.affiliations {
+    margin-top: 30px;
+}
+
 .js-petTemplate {
     display: none;
 }
