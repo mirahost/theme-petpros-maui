@@ -120,8 +120,12 @@
     $content.hide();
 
     $heading.on('click', function(){
-        var $content = $(this).nextUntil('h2');
+        var $this = $(this)
+        var $content = $this.nextUntil('h2');
+
+        $this.toggleClass('opened');
         $content.slideToggle();
+
     });
 
 })(jQuery);

@@ -1740,3 +1740,12 @@ dl.double-col {
 .szAccordion h2 {
     cursor: pointer;
 }
+
+    .szAccordion h2:before {
+        content: '+';
+        padding-right: 10px;
+    }
+
+    .szAccordion h2.opened:before {
+        content:'-';
+    }
