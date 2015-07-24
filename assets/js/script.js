@@ -1,5 +1,7 @@
 (function($){
 
+    var $window = $(window);
+
     // Ok, we have js loaded
     $('html').removeClass('no-js')
 
@@ -7,6 +9,10 @@
     $('#primaryNav li').on('mouseenter mouseleave', function(e){
         var $this = $(this);
         var $subnav = $('ul', $this);
+
+        if( $window.width() < 750 ) {
+            return false;
+        }
 
         if( $subnav.is(':animated') ) {
             return false;
