@@ -107,8 +107,24 @@
         fadeDelay: 1.0
     };
 
+
 })(jQuery);
 
+
+(function($){
+
+    var $wrapper = $('.szAccordion');
+    var $heading = $('h2', $wrapper);
+    var $content = $heading.nextUntil('h2');
+
+    $content.hide();
+
+    $heading.on('click', function(){
+        var $content = $(this).nextUntil('h2');
+        $content.slideToggle();
+    });
+
+})(jQuery);
 
 (function($){
 

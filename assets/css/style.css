@@ -1735,3 +1735,8 @@ dl.double-col {
 .fullImgWrapper {
     text-align: center;
 }
+
+
+.szAccordion h2 {
+    cursor: pointer;
+}
