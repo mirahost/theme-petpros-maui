@@ -42,6 +42,10 @@
         }
     }
 
+    $.validator.addMethod('notEmpty', function( value, element ){
+        return value !== -1;
+    }, $.validator.messages.required );
+
     if( $('#agreementForm').length )
         $('#agreementForm').validate( validatorSettings );
 

@@ -861,7 +861,7 @@ ul.mini-menu li a:hover {
     font-family: Lato;
 }
 .content .field-lg {
-    height: 330px;
+    height: 220px;
 }
 .content .field-md {
     height: 90px;
@@ -1403,7 +1403,8 @@ dl.double-col {
 }
 /*--- Responsive ---*/
 
-@media only screen and ( max-width: 1235px) {
+@media only screen and ( max-width: 1200px) {
+
     .header {
         width: 100%;
         text-align: center;
@@ -1427,8 +1428,7 @@ dl.double-col {
         text-align: center;
     }
 
-}
-@media only screen and ( max-width: 1225px) {
+
     .circles {
         display: inline-block;
         margin-top: 25px;
