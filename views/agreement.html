@@ -11,7 +11,7 @@
 
 
 			<div class="contact-container">
-				<form action="/agreement/" method="POST">
+				<form action="/agreement/" method="POST" id="agreementForm">
 					<h1>1. Your info</h1>
 
 					<div class="field">
@@ -114,16 +114,16 @@
 
 					<div class="statusWays">
 						<div class="amPmCheckbox">
-							<input id="mail" type="checkbox"/>
-							<label class="label" for="mail"> Email</label>
+							<input id="status_mail" type="checkbox"/>
+							<label class="label" for="status_mail"> Email</label>
 						</div>
 						<div class="amPmCheckbox">
-							<input id="phone" type="checkbox"/>
-							<label class="label" for="phone"> Phone</label>
+							<input id="status_phone" type="checkbox"/>
+							<label class="label" for="status_phone"> Phone</label>
 						</div>
 						<div class="amPmCheckbox">
-							<input id="text" type="checkbox"/>
-							<label class="label" for="text"> Text</label>
+							<input id="status_text" type="checkbox"/>
+							<label class="label" for="status_text"> Text</label>
 						</div>
 					</div>
 
@@ -201,8 +201,8 @@
 						</span>
 						<select name="vet_permission">
 							<option value="-1">Please select</option>
-							<option value="0">No</option>
-							<option value="1">Yes</option>
+							<option value="No">No</option>
+							<option value="Yes">Yes</option>
 						</select>
 					</div>
 
