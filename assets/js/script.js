@@ -42,8 +42,8 @@
         }
     }
 
-    if( $('#petAdd').length )
-        $('#petAdd').validate( validatorSettings );
+    if( $('#agreementForm').length )
+        $('#agreementForm').validate( validatorSettings );
 
     if ( $('#contactForm').length )
         $('#contactForm').validate( validatorSettings );
