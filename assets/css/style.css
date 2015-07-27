@@ -1402,7 +1402,8 @@ dl.double-col {
 }
 /*--- Responsive ---*/
 
-@media only screen and ( max-width: 1235px) {
+@media only screen and ( max-width: 1200px) {
+
     .header {
         width: 100%;
         text-align: center;
@@ -1426,8 +1427,7 @@ dl.double-col {
         text-align: center;
     }
 
-}
-@media only screen and ( max-width: 1225px) {
+
     .circles {
         display: inline-block;
         margin-top: 25px;
