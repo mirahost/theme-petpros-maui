@@ -46,8 +46,8 @@
         return value !== -1;
     }, $.validator.messages.required );
 
-    if( $('#petAdd').length )
-        $('#petAdd').validate( validatorSettings );
+    if( $('#agreementForm').length )
+        $('#agreementForm').validate( validatorSettings );
 
     if ( $('#contactForm').length )
         $('#contactForm').validate( validatorSettings );
