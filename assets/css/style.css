@@ -1730,6 +1730,10 @@ dl.double-col {
     margin-top: 30px;
 }
 
+.affiliations img {
+    margin-bottom: -60px !important;
+}
+
 .js-petTemplate {
     display: none;
 }
@@ -1737,6 +1741,15 @@ dl.double-col {
 .petForm {
     float: left;
     width: 100%;
+    margin-top: 20px;
+}
+
+.petForm:first-child {
+    margin-top: 0;
+}
+
+.petForm h2 {
+    margin-top: 0;
 }
 
 .petBoxMeta {
