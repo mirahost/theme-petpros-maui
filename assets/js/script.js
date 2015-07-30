@@ -59,6 +59,7 @@
     // Init partners slider after all images are loaded
     $(window).on('load', function(){
         var slideMaxWidth = 0;
+
         $('img', $partnersSlider).each(function(){
             var imgWidth = $(this).width();
             if( imgWidth > slideMaxWidth ) {
@@ -67,11 +68,10 @@
         })
 
         $partnersSlider.bxSlider({
-            minSlides : 4,
-            maxSlides : 6,
+            maxSlides : 4,
             controls : false,
             infiniteLoop : false,
-            slideWidth : parseInt( slideMaxWidth, 10 )
+            slideWidth : parseInt( slideMaxWidth + 20, 10 )
         });
     });
 
