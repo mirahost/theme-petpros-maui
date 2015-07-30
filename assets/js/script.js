@@ -71,7 +71,7 @@
             maxSlides : 4,
             controls : false,
             infiniteLoop : false,
-            slideWidth : parseInt( slideMaxWidth + 20, 10 )
+            slideWidth : parseInt( slideMaxWidth + 1, 8 )
         });
     });
 
