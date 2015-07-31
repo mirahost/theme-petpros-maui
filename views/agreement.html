@@ -9,6 +9,9 @@
 			<h2>{{sub_heading}}</h2>
 			<p>{{intro}}</p>
 
+            {% if form_data.result.type == 'success' %}
+            <h2>Thank you! We will respond to you as soon as possible. Woof!</h2>
+            {% else %}
 
 			<div class="contact-container">
 				<form action="/agreement/" method="POST" id="agreementForm">
@@ -218,6 +221,7 @@
 					</div>
 				</form>
 			</div>
+            {% endif %}
 			<div class="fullImgWrapper">
 				<img src="{{assets_img}}dogs_cats.jpg">
 			</div>
