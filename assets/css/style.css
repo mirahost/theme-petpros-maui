@@ -780,23 +780,7 @@ ul.mini-menu li a:hover {
     font-size: 25px;
     font-family: Lato;
 }
-.amPmCheckbox {
-    margin-bottom: 20px;
-    overflow: visible;
-}
-.amPmCheckbox input[type="checkbox"] {
-    display: none;
-}
-.amPmCheckbox input[type="checkbox"]+label {
-    background: url('../img/checkbox.jpg') no-repeat;
-    height: 25px;
-    padding-left: 40px;
-    padding-bottom: 18px;
-}
-.amPmCheckbox input[type="checkbox"]:checked + label {
-    background: url('../img/checkbox_checked.jpg') no-repeat;
-    height: 25px;
-}
+
 
 
 .field {
@@ -842,17 +826,11 @@ ul.mini-menu li a:hover {
     line-height: 25px;
     font-family: Lato;
     font-size: 22px;
+    display: inline-block;
 }
 .content .fieldname p {
     font-family: Verdana;
 }
-.content .field {
-
-}
-
-    .content .field input {
-
-    }
 
 .content select {
     color: #005987;
@@ -1632,6 +1610,141 @@ dl.double-col {
 
 /*Vendors*/
 
+/*labelauty*/
+/*!
+ * LABELAUTY jQuery Plugin Styles
+ *
+ * @file: jquery-labelauty.css
+ * @author: Francisco Neves (@fntneves)
+ * @site: www.francisconeves.com
+ * @license: MIT License
+ */
+
+/* Prevent text and blocks selection */
+input.labelauty + label ::selection { background-color: rgba(255, 255, 255, 0); }
+input.labelauty + label ::-moz-selection { background-color: rgba(255, 255, 255, 0); }
+
+/* Hide original checkboxes. They are ugly! */
+input.labelauty { display: none !important; }
+
+/*
+ * Let's style the input
+ * Feel free to work with it as you wish!
+ */
+input.labelauty + label
+{
+
+    transition: background-color 0.25s;
+    -moz-transition: background-color 0.25s;
+    -webkit-transition: background-color 0.25s;
+    -o-transition: background-color 0.25s;
+
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+/* Stylish text inside label */
+
+input.labelauty + label > span.labelauty-unchecked,
+input.labelauty + label > span.labelauty-checked
+{
+    display: inline-block;
+    line-height: 16px;
+    vertical-align: bottom;
+}
+
+/* Stylish icons inside label */
+
+input.labelauty + label > span.labelauty-unchecked-image,
+input.labelauty + label > span.labelauty-checked-image
+{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: bottom;
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin-right: 10px;
+    transition: background-image 0.5s linear;
+    -moz-transition: background-image 0.5s linear;
+    -webkit-transition: background-image 0.5s linear;
+    -o-transition: background-image 0.5s linear;
+}
+
+/* When there's a label, add a little margin to the left */
+input.labelauty + label > span.labelauty-unchecked-image + span.labelauty-unchecked,
+input.labelauty + label > span.labelauty-checked-image + span.labelauty-checked
+{
+    margin-left: 7px;
+}
+
+/* When not Checked */
+input.labelauty:not(:checked):not([disabled]) + label:hover
+{
+    background-color: #eaeaea;
+    color: #a7a7a7;
+}
+input.labelauty:not(:checked) + label > span.labelauty-checked-image
+{
+    display: none;
+}
+
+input.labelauty:not(:checked) + label > span.labelauty-checked
+{
+    display: none;
+}
+
+/* When Checked */
+input.labelauty:checked + label
+{
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+input.labelauty:checked:not([disabled]) + label:hover
+{
+    background-color: #72c5fd;
+}
+input.labelauty:checked + label > span.labelauty-unchecked-image
+{
+    display: none;
+}
+
+input.labelauty:checked + label > span.labelauty-unchecked
+{
+    display: none;
+}
+
+input.labelauty:checked + label > span.labelauty-checked
+{
+    display: inline-block;
+}
+
+input.labelauty.no-label:checked + label > span.labelauty-checked
+{
+    display: block;
+}
+
+/* When Disabled */
+input.labelauty[disabled] + label
+{
+    opacity: 0.5;
+}
+
+/* Add a background to (un)checked images */
+input.labelauty + label > span.labelauty-unchecked-image
+{
+    background-image: url( ../img/checkbox.jpg );
+}
+
+input.labelauty + label > span.labelauty-checked-image
+{
+    background-image: url( ../img/checkbox_checked.jpg );
+}
+
+
 /*jquery modal*/
 
 .modal {
@@ -1751,7 +1864,9 @@ dl.double-col {
 .petForm h2 {
     margin-top: 0;
 }
-
+.petForm .label {
+    margin-bottom: 20px;
+}
 .petBoxMeta {
     margin-top: 30px;
     float: left;

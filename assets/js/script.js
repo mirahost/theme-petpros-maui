@@ -112,6 +112,18 @@
     };
 
 
+    // Custom checkboxes
+    var labelSettings = {
+        force_random_id : true,
+        label : false
+    };
+
+    $(':radio, :checkbox').labelauty( labelSettings );
+
+    $('#petsBoxWrapper').on('boxAdded', function(){
+        $(':radio:not(".labelauty"), :checkbox:not(".labelauty")').labelauty( labelSettings );
+    })
+
 })(jQuery);
 
 
@@ -159,6 +171,7 @@
             return false;
         }
 
+        $wrapper.trigger('boxAdded');
         return false;
     });
 
