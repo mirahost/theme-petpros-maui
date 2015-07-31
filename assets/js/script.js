@@ -46,11 +46,25 @@
         return value !== -1;
     }, $.validator.messages.required );
 
-    if( $('#agreementForm').length )
-        $('#agreementForm').validate( validatorSettings );
+    var $agreementForm = $('#agreementForm');
+    var $contactForm = $('#contactForm');
 
-    if ( $('#contactForm').length )
-        $('#contactForm').validate( validatorSettings );
+    var $terms = $('[name="terms_accepted"]', $agreementForm);
+
+    if( $agreementForm.length )
+        $agreementForm.validate( validatorSettings );
+
+    if ( $contactForm.length )
+        $contactForm.validate( validatorSettings );
+
+
+    $terms.on('change', function(){
+        if( !$(this).is(':checked') ) {
+            $('button[type="submit"]', $agreementForm).prop('disabled', 'disabled');
+        } else {
+            $('button[type="submit"]', $agreementForm).removeAttr('disabled');
+        }
+    }).trigger('change');
 
 
     // Partners slider

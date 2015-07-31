@@ -882,7 +882,6 @@ ul.mini-menu li a:hover {
     color: #FFF;
     text-transform: uppercase;
     float: right;
-    cursor: pointer;
 }
 .center_v {
     line-height: 70px;
@@ -1886,6 +1885,25 @@ input.labelauty + label > span.labelauty-checked-image
     text-align: center;
 }
 
+.amPmCheckbox {
+    margin-bottom: 20px;
+    overflow: visible;
+}
+
+button[disabled] {
+    opacity: .5;
+    cursor: default;
+}
+
+#agreementForm .formMeta {
+    margin: 30px 0;
+    float: left;
+    width: 100%;
+}
+
+    #agreementForm .formMeta label {
+        margin-top: 15px;
+    }
 
 .szAccordion h2 {
     cursor: pointer;
