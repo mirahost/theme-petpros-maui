@@ -1349,12 +1349,24 @@ dl.double-col {
 }
 
 .priceBox {
+    margin-bottom: 15px;
     color: #666666;
 }
-    .priceBox li {
+    .priceBox > * {
         display: inline-block;
         vertical-align: top;
+    }
+    .priceBox ul {
         list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .priceBox li {
+        margin-bottom: 10px;
+    }
+    .priceBox li:last-child {
+        margin-bottom: 0;
     }
 
     .priceBox .label {
