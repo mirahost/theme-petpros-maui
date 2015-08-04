@@ -67,25 +67,20 @@
     }).trigger('change');
 
 
-    // Partners slider
-    var $partnersSlider = $('.footer-links .slider');
+
 
     // Init partners slider after all images are loaded
     $(window).on('load', function(){
-        var slideMaxWidth = 0;
 
-        $('img', $partnersSlider).each(function(){
-            var imgWidth = $(this).width();
-            if( imgWidth > slideMaxWidth ) {
-                slideMaxWidth = imgWidth;
-            }
-        })
+        var $partnersSlider = $('.footer-links .slider');
+        var childrenLen = $partnersSlider.children().length;
 
         $partnersSlider.bxSlider({
-            maxSlides : 4,
+            maxSlides : 5,
+            minSlides : 1,
             controls : false,
             infiniteLoop : false,
-            slideWidth : parseInt( slideMaxWidth + 1, 8 )
+            slideWidth : parseInt( $partnersSlider.width()/childrenLen, 10 )
         });
     });
 
