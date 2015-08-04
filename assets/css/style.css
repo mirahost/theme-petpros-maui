@@ -1861,6 +1861,9 @@ input.labelauty + label > span.labelauty-checked-image
 .affiliations {
     margin-top: 30px;
 }
+    .affiliations img {
+        margin: -55px 0 -40px !important;
+    }
 
 
 .js-petTemplate {
