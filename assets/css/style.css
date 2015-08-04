@@ -1934,3 +1934,10 @@ button[disabled] {
     .szAccordion h2.opened:before {
         content:'-';
     }
+
+.home_icon {
+    background: url('../img/home_icon.png') no-repeat center center;
+    width: 27px;
+    height: 22px;
+    display: block;
+}
