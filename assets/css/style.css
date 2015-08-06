@@ -1055,13 +1055,20 @@ h2.f-right {
     padding: 0 20px;
 }
 
-.footer-links a {
-    margin: 0 10px;
+.footer-links li {
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    margin: 0;
+    float: none !important;
+    vertical-align: middle;
+    display: inline-block;
 }
 
-.footer-links img {
-    margin: auto;
+.footer-links a {
+    display: inline-block;
 }
+
 
 .footer-links p {
     font-family: 'Roboto', sans-serif;
@@ -1814,7 +1821,7 @@ input.labelauty + label > span.labelauty-checked-image
 
 .bx-wrapper img {
     max-width: 100%;
-    display: block;
+    display: inline-block;
 }
 
 .bx-wrapper .bx-pager {
@@ -1824,6 +1831,7 @@ input.labelauty + label > span.labelauty-checked-image
 .bx-wrapper .bx-pager > * {
     display: inline-block;
     vertical-align: middle;
+    margin: 0 5px;
 }
 
 .bx-wrapper .bx-pager a {
@@ -1853,10 +1861,10 @@ input.labelauty + label > span.labelauty-checked-image
 .affiliations {
     margin-top: 30px;
 }
+    .affiliations img {
+        margin: -55px 0 -40px !important;
+    }
 
-.affiliations img {
-    margin-bottom: -60px !important;
-}
 
 .js-petTemplate {
     display: none;
@@ -1929,3 +1937,10 @@ button[disabled] {
     .szAccordion h2.opened:before {
         content:'-';
     }
+
+.home_icon {
+    background: url('../img/home_icon.png') no-repeat center center;
+    width: 27px;
+    height: 22px;
+    display: block;
+}
