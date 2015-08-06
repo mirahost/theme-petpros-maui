@@ -5,13 +5,14 @@
 
 		<div class="content">
 			<img class="f-right" src="{{assets_img}}dog_cat.jpg" alt="">
-			<h1>{{heading}}</h1>
-			<h2>{{sub_heading}}</h2>
-			<p>{{intro}}</p>
-
-            {% if form_data.result.type == 'success' %}
+            
+            {% if form_data.result %}
             <h2>Thank you! We will respond to you as soon as possible. Woof!</h2>
             {% else %}
+
+            <h1>{{heading}}</h1>
+            <h2>{{sub_heading}}</h2>
+            <p>{{intro}}</p>
 
 			<div class="contact-container">
 				<form action="/agreement/" method="POST" id="agreementForm">
