@@ -68,7 +68,7 @@
 
 
 
-
+/*\
     // Init partners slider after all images are loaded
     $(window).on('load', function(){
 
@@ -83,7 +83,7 @@
             slideWidth : parseInt( $partnersSlider.width()/childrenLen, 10 )
         });
     });
-
+*/
 
     // Billing sync fields
     var fields = {
