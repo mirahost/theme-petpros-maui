@@ -29,7 +29,7 @@
 
 					<div class="field">
 						<span class="labelWrapper">
-							<label>PHONE</label>
+							<label>CELL PHONE</label>
 						</span>
 						<input type="text" name="phone" class="required">
 					</div>
@@ -71,8 +71,24 @@
 						</div>
 					</div><!--/.half-split-->
 
-					<h1>2. Billing info</h1>
+					<h1>2. Billing</h1>
 
+                    <p class="question">How would you like to be billed?</p>
+
+                    <div class="field">
+						<span class="labelWrapper">
+							<label>BILLING METHOD</label>
+						</span>
+                        <select name="status_updates" class="notEmpty">
+                            <option value="-1">Please select</option>
+                            <option value="Snail Mail Invoice to Address Above">Snail Mail Invoice to Address Above</option>
+                            <option value="Snail Mail Invoice to Different Address">Snail Mail Invoice to Different Address</option>
+                            <option value="Email Invoice to Address Above">Email Invoice to Address Above</option>
+                            <option value="Credit Card">Credit Card - We will contact you for info</option>
+                        </select>
+                    </div>
+
+                    <!--
 					<div class="amPmCheckbox">
 						<input name="check" id="check" type="checkbox"/>
 						<label class="label js-addressSync" for="check"> Same address as above?</label>
@@ -101,7 +117,7 @@
 							<input type="text" name="billing_zip" class="required">
 						</div>
 					</div>
-
+                    -->
 
 					<h1>3. Status updates</h1>
 
@@ -202,6 +218,27 @@
 						</span>
 						<input type="text" name="vets_address" class="required">
 					</div>
+
+                    <div class="field">
+						<span class="labelWrapper">
+							<label>SECONDARY VET'S NAME</label>
+						</span>
+                        <input type="text" name="secondary_vets_name" class="required">
+                    </div>
+
+                    <div class="field">
+						<span class="labelWrapper">
+							<label>PHONE</label>
+						</span>
+                        <input type="text" name="secondary_vets_phone" class="required">
+                    </div>
+
+                    <div class="field">
+						<span class="labelWrapper">
+							<label>ADDRESS</label>
+						</span>
+                        <input type="text" name="secondary_vets_address" class="required">
+                    </div>
 
 					<p class="question">Do I have your permission to take your pet(s) to this veterinarian if I deem it necessary and  am not able to contact you or your emergency contacts?</p>
 
