@@ -1597,7 +1597,13 @@ dl.double-col {
 }
 
 .petServices {
+    position: relative;
+    z-index: 2;
 }
+
+    .petServices h2.f-right {
+        background-color: rgba(255, 255, 255, .8);
+    }
 
 .petServices:before {
     content :'\2002';
