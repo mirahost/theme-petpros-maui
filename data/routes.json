@@ -2,41 +2,41 @@
   "home" : {
     "path": "/",
     "method": "GET",
-    "controller": "index"
+    "controller": "content"
   },
   "about" : {
     "path": "/about/",
     "method": "GET",
-    "controller": "about"
+    "controller": "content"
   },
   "faqs" : {
     "path": "/faqs/",
     "method": "GET",
-    "controller": "faqs"
+    "controller": "content"
   },
   "policies" : {
     "path": "/policies/",
     "method": "GET",
-    "controller": "policies"
+    "controller": "content"
   },
   "terms" : {
     "path": "/terms/",
     "method": "GET",
-    "controller": "terms"
+    "controller": "content"
   },
   "contact" : {
     "path": "/contact/",
     "method": "GET",
-    "controller": "contact"
+    "controller": "content"
   },
   "services" : {
     "path": "/services/",
     "method": "GET",
-    "controller": "services"
+    "controller": "content"
   },
   "agreement" : {
     "path": "/agreement/",
     "method": "GET",
-    "controller": "agreement"
+    "controller": "content"
   }
 }
